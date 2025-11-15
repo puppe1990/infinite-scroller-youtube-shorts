@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube Shorts AutoPlay</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 16px 20px;
+        background: #0f0f0f;
+        color: #fff;
+        width: 260px;
+      }
+      h1 {
+        font-size: 16px;
+        margin: 0 0 12px;
+        text-align: center;
+      }
+      .toggle-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      label {
+        font-size: 14px;
+      }
+      input[type="checkbox"] {
+        width: 40px;
+        height: 20px;
+      }
+      .status {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 8px;
+        color: #00e676;
+      }
+      .status.disabled {
+        color: #ff5252;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shorts AutoPlay</h1>
+    <div class="toggle-row">
+      <label for="autoplayToggle">Ativar extensão</label>
+      <input id="autoplayToggle" type="checkbox" />
+    </div>
+    <div id="status" class="status">Ativo</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
